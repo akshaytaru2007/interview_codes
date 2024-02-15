@@ -15,7 +15,7 @@ public class Main {
         //binarySearch();
         //quickSort();
         //bubbleSort();
-        //mergeSort();
+        mergeSort();
         int prices[] = { 7, 1, 5, 6, 4 };
         //int maxProfit = findMaximumProfitFromStocks(prices);
         //System.out.println("Maximum Profit: " + maxProfit);
@@ -278,7 +278,8 @@ public class Main {
     }
 
     private static void mergeSort() {
-        int[] input = new int[] {10, 2, 16, 12, 8, 12, 15, 6, 2};
+//        int[] input = new int[] {10, 2, 16, 12, 8, 12, 15, 6, 2};
+        int[] input = new int[] {10, 16, 8, 12, 15, 6, 2};
         MergeSort mergeSort = new MergeSort();
         mergeSort.performMergeSort(input, 0, input.length-1);
         System.out.println("Merge Sort:\n");

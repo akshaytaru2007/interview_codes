@@ -1,6 +1,6 @@
 public class QuickSort {
 
-    void performQuickSort(int arr[], int low, int high) {
+    void performQuickSort(int[] arr, int low, int high) {
         if(low < high) {
             int j = partition(arr, low, high);
             performQuickSort(arr, low, j);
@@ -14,14 +14,12 @@ public class QuickSort {
         int i = low;
         int j = high;
         while(i<j) {
-
             while (arr[i] <= pivot) {
                 i++;
             }
             while (arr[j] > pivot) {
                 j--;
             }
-
             if (i < j) {
                 swap(arr, i, j);
             }
